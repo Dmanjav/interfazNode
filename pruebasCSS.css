@@ -1,7 +1,7 @@
 body {
     background-color: rgb(9, 9, 51);
     color: white;
-    font-family: Arial, sans-serif;
+    font-family: "Poppins", sans-serif;
     text-align: center;
     font-size: 15px;
 }
@@ -13,7 +13,7 @@ body {
     margin-right: auto;
     background-color: whitesmoke ;
     
-    border-radius: 1%;
+    border-radius: 20px 20px;
     box-shadow: 0px 5px 10px 0px rgba(221, 227, 255, 1);
 }
 
@@ -42,53 +42,75 @@ body {
     width: 350px;
     border-radius: 50%;
     background-color: rgba(182, 182, 182, 0.363);
-    position: relative;
-    margin-left: 25;
+    position: absolute;
+    margin-left: 33;
     box-shadow: inset 15px -100px 90px rgba(0,0,0,0.2);
+    
 }
 
 .display1 .circulo .texto{
-    font-size: 125px;
-    position: absolute;
-    top: 30%;
-    left: 8%;
+    font-size: 120px;
+    position: relative;
+    top: 20%;
+    left: auto;
+    right: auto;
+    border-color: aqua;
+    border: 10px;
 }
-/*
-.display2{
-    margin-left: 30px;
+
+.tablero .recargar{
+    width: 10%;
+    background-color: white;
+    border: none;
+    color: black;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    margin: 4px 1px;
+    cursor: pointer;
+    border-radius: 20px 20px;
+    box-shadow: 0px 5px 10px 0px rgba(221, 227, 255, 1);
+    margin-top: 10px;
+    transition: all ease 0.5s;
+}
+
+.recargar:hover{
+    transform: translateY(-3px);
+    box-shadow: 0px 10px 20px 2px rgba(221, 227, 255, 1);
+}
+
+.graficas{
+    height: 1075px;;
+    width: 1800px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: whitesmoke ;
+    
+    border-radius: 20px 20px;
+    box-shadow: 0px 5px 10px 0px rgba(221, 227, 255, 1);
+}
+
+.individual{
+    margin-top: 1.3%;
+    margin-left: 1%;
+    margin-right: 1%;
     height: 500px;
-    width: 25%;
+    width: 48%;
     background-color:white;
     color: black;
     font-size: 20px;
-    border-radius: 5%;
+    border-radius: 10px 10px;
     position: relative;
-    box-shadow: 0px 5px 10px 0px rgba(221, 227, 255, 0.7);
+    box-shadow: 0px 5px 10px 0px rgba(221, 227, 255, 1);
     transition: all ease 0.5s;
     float: left;
 }
-
-.display2:hover{
+.individual:hover{
     transform: translateY(-3px);
-    box-shadow: 0px 10px 20px 2px rgba(221, 227, 255, 0.7);
+    box-shadow: 0px 10px 20px 2px rgba(221, 227, 255, 1);
 }
 
-.display2 .circulo{
-    height: 350px;
-    width: 350px;
-    border-radius: 50%;
-    background-color: rgba(182, 182, 182, 0.363);
-    position: relative;
-    margin-left: 25;
-    box-shadow: inset 15px -100px 90px rgba(0,0,0,0.2);
-}
-
-.display2 .circulo .texto{
-    font-size: 125px;
-    position: absolute;
-    top: 30%;
-    left: 8%;
-}*/
 
 nav {
     width: auto;

@@ -2,6 +2,9 @@
    <head>
       <title> Interfaz Reto Gus y Manja </title>
       <link rel = "stylesheet" href="pruebasCSS.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:ital@0;1&display=swap" rel="stylesheet">
    </head>
 
    <body>
@@ -45,5 +48,122 @@
             </div>
             <p>Ultima medicion: </p>
          </div>
+         <button class="recargar">Recargar</button>
       </div>
+      <br>
+      <div class="graficas">
+         <div class="individual">
+            <canvas id="myChart"></canvas>
+            <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+      
+            <script>
+              const ctx = document.getElementById('myChart');
+            
+              new Chart(ctx, {
+                type: 'bar',
+                data: {
+                  labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+                  datasets: [{
+                    label: 'Temperatura',
+                    data: [[]],
+                    borderWidth: 1
+                  }]
+                },
+                options: {
+                  scales: {
+                    y: {
+                      beginAtZero: true
+                      
+                    }
+                  }
+                }
+              });
+            </script>
+         </div>
+         <div class="individual">
+            <canvas id="myChart2"></canvas>
+            <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+      
+            <script>
+              const abc = document.getElementById('myChart2');
+            
+              new Chart(abc, {
+                type: 'bar',
+                data: {
+                  labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+                  datasets: [{
+                    label: 'Humedad',
+                    data: [[]],
+                    borderWidth: 1
+                  }]
+                },
+                options: {
+                  scales: {
+                    y: {
+                      beginAtZero: true
+                      
+                    }
+                  }
+                }
+              });
+            </script>
+         </div>
+         <div class="individual">
+            <canvas id="myChart3"></canvas>
+            <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+      
+            <script>
+              const xyz = document.getElementById('myChart3');
+            
+              new Chart(xyz, {
+                type: 'bar',
+                data: {
+                  labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+                  datasets: [{
+                    label: 'Ppm CO',
+                    data: [[]],
+                    borderWidth: 1
+                  }]
+                },
+                options: {
+                  scales: {
+                    y: {
+                      beginAtZero: true
+                      
+                    }
+                  }
+                }
+              });
+            </script>
+         </div>
+         <div class="individual">
+            <canvas id="myChart4"></canvas>
+            <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+      
+            <script>
+              const efg = document.getElementById('myChart4');
+            
+              new Chart(efg, {
+                type: 'bar',
+                data: {
+                  labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+                  datasets: [{
+                    label: 'Ppm CO2',
+                    data: [[]],
+                    borderWidth: 1
+                  }]
+                },
+                options: {
+                  scales: {
+                    y: {
+                      beginAtZero: true
+                      
+                    }
+                  }
+                }
+              });
+            </script>
+         </div>
+      </div>
+      <br>
    </body>

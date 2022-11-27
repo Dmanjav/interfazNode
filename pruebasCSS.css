@@ -39,11 +39,11 @@ body {
 }
 
 .display1 .circulo{
-    height: 350px;
-    width: 350px;
+    height: 70%;
+    width: 85%;
     border-radius: 50%;
     background-color: rgba(182, 182, 182, 0.363);
-    position: absolute;
+    position: sticky;
     margin-left: 33;
     box-shadow: inset 15px -100px 90px rgba(0,0,0,0.2);
     

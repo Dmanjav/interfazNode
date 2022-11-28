@@ -1,3 +1,5 @@
+console.log("Hola");
+
 var mysql = require("mysql");
 
 var con = mysql.createConnection({
@@ -7,25 +9,28 @@ var con = mysql.createConnection({
     database: "retofinal"
 });
 //listas
-con.connect(function(err) {
+/*con.connect(function(err) {
     if (err) throw err;
     console.log("Connected!");
     con.query("SELECT ppmco FROM lecturaco ORDER BY id DESC LIMIT 1;", function (err, result) {
       if (err) throw err;
-      console.log("Result: " + result);
+      return (result);
     });
   });
-/*
+*/
 
 //un solo valor
 con.connect(function(err) {
     if (err) throw err;
      con.query("SELECT ppmco FROM lecturaco ORDER BY id DESC LIMIT 1;", function (err, result, fields) {
       if (err) throw err;
+      //document.getElementById("dato").innerHTML =  result;
       console.log(result);
     });
   });
-*/
+
+
+//*/
 /*Seccion de querys
 Temperatura
 SELECT temperatura FROM lecturatemperatura ORDER BY id DESC LIMIT 1
